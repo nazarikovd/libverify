@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.mail.libverify" >
+
+    <uses-sdk android:minSdkVersion="21" />
+
+    <queries>
+        <intent>
+            <action android:name="ru.mail.libverify.ipc.IpcMessageService" />
+        </intent>
+    </queries>
+
+    <!--
+        All following permissions relate to Normal Protection Level group,
+        so they are automatically granted to an application. Although these permissions
+        are vital for libverify proper functioning, your application may exclude some of them
+        using https://developer.android.com/studio/build/manifest-merge mechanism.
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+        It is strongly recommended to enable this permission in your application and
+        ask a user to grant it before a verification process. Presence of this permission
+        allows us to track IMEI & IMSI of a particular device to make libverify push notifications
+        with code more secure. Also it backs FlashCall technology that saves your money in cases
+        when phone call is cheaper then SMS.
+    -->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:maxSdkVersion="22" />
+    <!--
+        All following permissions are optional and libverify SDK will
+        operate normally without any of them. Note, that in case if permission
+        android.permission.RECEIVE_SMS is not available in your application
+        (Google forces now to remove it from all apps), you have to provide all support
+        SMS Retriever API (generate has and send it to Notify team).
+    -->
+    <!--
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    -->
+    <application android:supportsRtl="true" >
+
+        <!-- [START SMS functionality] -->
+
+        <service
+            android:name="ru.mail.platform.libverify.sms.SmsRetrieverService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="ru.mail.libverify.sms.IncomingSmsReceiver"
+            android:enabled="false"
+            android:exported="true"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="ru.mail.libverify.sms.IncomingCallReceiver"
+            android:enabled="false"
+            android:exported="true"
+            android:permission="android.permission.READ_PHONE_STATE" >
+            <intent-filter android:priority="999" >
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.mail.libverify.sms.SmsHandlingService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+            <intent-filter>
+                <action android:name="ru.mail.sms.SmsHandlingService" />
+            </intent-filter>
+        </service>
+        <!-- [END SMS functionality] -->
+
+
+        <!-- [START IPC functionality] -->
+        <service
+            android:name="ru.mail.libverify.ipc.IpcMessageService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INTERNET" >
+            <intent-filter>
+                <action android:name="ru.mail.libverify.ipc.IpcMessageService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="ru.mail.libverify.ipc.IpcNotificationService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INTERNET" >
+            <intent-filter>
+                <action android:name="ru.mail.libverify.ipc.IpcNotificationService" />
+            </intent-filter>
+        </service>
+        <!-- [END IPC functionality] -->
+
+
+        <!-- [START NOTIFICATION functionality] -->
+        <service
+            android:name="ru.mail.libverify.notifications.NotificationService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="ru.mail.notifications.NotificationService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="ru.mail.libverify.notifications.SettingsActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:taskAffinity="ru.mail.libverify.notifications.SettingsActivity"
+            android:theme="@style/libverify.Theme.Settings" />
+        <activity
+            android:name="ru.mail.libverify.notifications.SmsCodeNotificationActivity"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:taskAffinity="ru.mail.libverify.notifications.SmsCodeNotificationActivity"
+            android:theme="@style/libverify.Theme.Custom.Popup"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="ru.mail.libverify.notifications.SmsDialogsActivity"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTask"
+            android:taskAffinity="ru.mail.libverify.notifications.SmsDialogsActivity"
+            android:theme="@style/libverify.Theme.Settings" />
+        <activity
+            android:name="ru.mail.libverify.notifications.SmsMessagesActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:parentActivityName="ru.mail.libverify.notifications.SmsDialogsActivity"
+            android:taskAffinity="ru.mail.libverify.notifications.SmsDialogsActivity"
+            android:theme="@style/libverify.Theme.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".notifications.SmsDialogsActivity" />
+        </activity>
+        <!-- [END NOTIFICATION functionality] -->
+
+
+        <!-- [START HELPER functionality] -->
+        <!-- Old location of this receiver, do not remove it from here. -->
+        <!-- [START HELPER functionality] -->
+        <!-- Old location of this receiver, do not remove it from here. -->
+        <receiver
+            android:name="ru.mail.libverify.utils.NetworkStateReceiver"
+            android:exported="false" />
+        <receiver android:name="ru.mail.libverify.utils.network.NetworkStateReceiver" />
+        <!--  -->
+        <!-- This receiver can be subscribed only from the code. -->
+        <receiver
+            android:name="ru.mail.libverify.utils.ScreenStateReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.mail.libverify.utils.network.NetworkCheckService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- This receiver needs to enabled because libverify has some logic during an app reinstall. -->
+        <receiver
+            android:name="ru.mail.libverify.utils.PackageStateReceiver"
+            android:exported="false"
+            android:label="PackageStateReceiver:2011000" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_MY_PACKAGE_REPLACED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="ru.mail.libverify.utils.PackageStateReceiver" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.mail.libverify.fetcher.FetcherService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="VerificationCheckService" />
+        <service
+            android:name="ru.mail.libverify.fetcher.FetcherJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="VerificationCheckService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <receiver
+            android:name="ru.mail.libverify.utils.SystemRestartReceiver"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="ru.mail.libverify.utils.AlarmReceiver" />
+        <receiver
+            android:name="ru.mail.libverify.utils.BatteryLevelReceiver"
+            android:enabled="false"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="ru.mail.libverify.utils.permissions.ShadowActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="ru.mail.libverify.utils.VerifyInitProvider"
+            android:authorities="${applicationId}.verifyinitprovider"
+            android:exported="false" />
+        <!-- [END HELPER functionality] -->
+
+        <receiver
+            android:name="ru.mail.verify.core.utils.network.NetworkStateReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.mail.verify.core.utils.VerificationService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="ru.mail.verify.core.utils.VerificationJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name="ru.mail.verify.core.gcm.GcmProcessService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+        <service
+            android:name="ru.mail.verify.core.utils.IntentProcessService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="ru.mail.verify.core.utils.IntentProcessJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+    </application>
+
+</manifest>

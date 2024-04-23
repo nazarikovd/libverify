@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 dzień</string>
+    <string name="block_for_one_hour_text">1 godzinę</string>
+    <string name="block_for_one_minute_text">1 minutę</string>
+    <string name="block_for_text">Nie przeszkadzać przez</string>
+    <string name="block_notifications_description">Tymczasowo zablokuj powiadomienia</string>
+    <string name="block_notifications_text">Nie przeszkadzać</string>
+    <string name="general_error_description">Wystąpił błąd, spróbuj ponownie później</string>
+    <string name="network_error_description">Sprawdź swoje połączenie z Internetem i spróbuj ponownie</string>
+    <string name="notification_event_cancel">Anuluj</string>
+    <string name="notification_event_close">Zamknij</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Wyczyść</string>
+    <string name="notification_history_delete">Skasuj</string>
+    <string name="notification_history_shortcut_name">Powiadomienia</string>
+    <string name="notification_history_text">Historia powiadomień</string>
+    <string name="notification_history_text_description">Wyświetl listę powiadomień dla tego urządzenia</string>
+    <string name="notification_settings">Ustawienia</string>
+    <string name="report_reuse_text">%1$s nie należy do mnie</string>
+    <string name="report_reuse_text_confirmation">Czy na pewno chcesz przestać otrzymywać powiadomienia weryfikacyjne dla %1$s na wszystkich swoich urządzeniach?</string>
+    <string name="report_reuse_text_description">Zablokuj powiadomienia weryfikacyjne na wszystkich moich urządzeniach</string>
+    <string name="setting_saved_toast_text">Twoje ustawienia zostały zapisane</string>
+    <string name="title_activity_settings">Ustawienia powiadomień</string>
+</resources>

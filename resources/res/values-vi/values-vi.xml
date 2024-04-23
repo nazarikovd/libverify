@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 ngày</string>
+    <string name="block_for_one_hour_text">1 giờ</string>
+    <string name="block_for_one_minute_text">1 phút</string>
+    <string name="block_for_text">Đừng làm phiền tôi nữa</string>
+    <string name="block_notifications_description">Tạm thời chặn việc nhận các thông báo xác minh</string>
+    <string name="block_notifications_text">Đừng làm phiền tôi</string>
+    <string name="general_error_description">Đã xảy ra lỗi, vui lòng thử lại.</string>
+    <string name="network_error_description">Kiểm tra kết nối mạng và thử lại</string>
+    <string name="notification_event_cancel">Hủy</string>
+    <string name="notification_event_close">Đóng</string>
+    <string name="notification_event_confirm">Ok</string>
+    <string name="notification_history_clear">Xóa</string>
+    <string name="notification_history_delete">Xóa bỏ</string>
+    <string name="notification_history_shortcut_name">Thông báo</string>
+    <string name="notification_history_text">Lịch sử thông báo</string>
+    <string name="notification_history_text_description">Hiện danh sách thông báo cho thiết bị này</string>
+    <string name="notification_settings">Cài đặt</string>
+    <string name="report_reuse_text">%1$s không thuộc về tôi</string>
+    <string name="report_reuse_text_confirmation">Bạn có chắc chắn muốn chặn việc nhận thông báo xác minh đối với %1$s trên tất cả các thiết bị của bạn?</string>
+    <string name="report_reuse_text_description">Chặn thông báo xác minh trên tất cả các thiết bị của tôi</string>
+    <string name="setting_saved_toast_text">Cài đặt của bạn đã được lưu</string>
+    <string name="title_activity_settings">Cài đặt thông báo</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 день</string>
+    <string name="block_for_one_hour_text">1 годину</string>
+    <string name="block_for_one_minute_text">1 хвилину</string>
+    <string name="block_for_text">Не турбувати мене</string>
+    <string name="block_notifications_description">Тимчасово заблокувати отримання верифікаційних повідомлень</string>
+    <string name="block_notifications_text">Не турбувати мене</string>
+    <string name="general_error_description">Сталася помилка. Будь ласка, спробуйте повторити.</string>
+    <string name="network_error_description">Перевірте підключення до Інтернету та спробуйте ще раз</string>
+    <string name="notification_event_cancel">Відміна</string>
+    <string name="notification_event_close">Закрити</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Очистити</string>
+    <string name="notification_history_delete">Видалити</string>
+    <string name="notification_history_shortcut_name">Сповіщення</string>
+    <string name="notification_history_text">Історія сповіщень</string>
+    <string name="notification_history_text_description">Показати список сповіщень для цього пристрою</string>
+    <string name="notification_settings">Налаштування</string>
+    <string name="report_reuse_text">%1$s не належить мені</string>
+    <string name="report_reuse_text_confirmation">Ві впевнені, що хочете заблокувати отримання верифікаційних повідомлень для %1$s на всіх ваших пристроях?</string>
+    <string name="report_reuse_text_description">Заблокувати отримання верифікаційних повідомлень на всіх моїх пристроях</string>
+    <string name="setting_saved_toast_text">Ваші налаштування збережено</string>
+    <string name="title_activity_settings">Налаштування повідомлень</string>
+</resources>

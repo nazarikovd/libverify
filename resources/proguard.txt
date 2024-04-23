@@ -1,0 +1,105 @@
+-keepattributes InnerClasses,Signature,EnclosingMethod,*Annotation*
+-keepclassmembers enum * {
+     public static **[] values();
+     public static ** valueOf(java.lang.String);
+     <fields>;
+}
+
+-keep public class androidx.core.app.VerifySafeJobIntentService {
+    public *;
+}
+-keepclassmembers public class androidx.core.app.VerifySafeJobIntentService {
+    public *;
+    protected *;
+}
+
+-keep public class androidx.core.app.VerifySafeJobServiceEngineImpl {
+    public *;
+}
+-keepclassmembers public class androidx.core.app.VerifySafeJobServiceEngineImpl {
+    public *;
+    protected *;
+}
+
+-keep public class android.support.v4.app.VerifySafeJobIntentService {
+    public *;
+}
+-keepclassmembers public class android.support.v4.app.VerifySafeJobIntentService {
+    public *;
+    protected *;
+}
+
+-keep public class android.support.v4.app.VerifySafeJobServiceEngineImpl {
+    public *;
+}
+-keepclassmembers public class android.support.v4.app.VerifySafeJobServiceEngineImpl {
+    public *;
+    protected *;
+}
+
+
+#################### JSON rules ####################
+-keep class ru.mail.verify.core.utils.Gsonable
+-keepclassmembernames class * implements ru.mail.verify.core.utils.Gsonable {
+  !transient <fields>;
+}
+-keepclassmembers class * implements ru.mail.verify.core.utils.Gsonable {
+  <init>(...);
+}
+-keep class ru.mail.verify.core.utils.Gsonable$* {
+    public *;
+}
+###################### END #########################
+
+
+-keep interface ru.mail.libverify.api.CommonContext { *;}
+-keep interface ru.mail.verify.core.storage.InstanceConfig { *;}
+
+-keepclassmembers interface ru.mail.verify.core.storage.InstanceConfig { *; }
+
+-keep enum ru.mail.verify.core.storage.InstanceConfig$PropertyType
+
+
+-keep class ru.mail.libverify.storage.a {
+    public static *;
+}
+
+-keep class ru.mail.libverify.storage.a.* { *;}
+-keepclassmembers public class ru.mail.libverify.storage.a.* {
+    public *;
+    protected *;
+}
+
+-keep class ru.mail.libverify.storage.m.* { *;}
+-keepclassmembers public class ru.mail.libverify.storage.m.* {
+    public *;
+    protected *;
+}
+
+-keep class ru.mail.libverify.api.b {
+    public static *;
+}
+-keepclassmembers public class ru.mail.libverify.api.b {
+    public *;
+    protected *;
+}
+
+-keep class ru.mail.libverify.api.d {
+    public static *;
+}
+-keepclassmembers public class ru.mail.libverify.api.d {
+    public *;
+    protected *;
+}
+
+
+-keep class ru.mail.libverify.storage.InstanceConfig { *;}
+-keepclassmembers public class ru.mail.libverify.storage.InstanceConfig {
+    public *;
+}
+
+-keep interface ru.mail.libverify.api.SignOutCallback { *;}
+
+-keep class ru.mail.libverify.utils.Optional { *;}
+-keep interface ru.mail.libverify.utils.Optional$Action { *;}
+-keepclassmembers public class ru.mail.libverify.utils.Optional { public *;}

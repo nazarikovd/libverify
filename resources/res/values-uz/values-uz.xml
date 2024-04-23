@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 kun</string>
+    <string name="block_for_one_hour_text">1 soat</string>
+    <string name="block_for_one_minute_text">1 daqiqa</string>
+    <string name="block_for_text"> Meni bezovta qilmang </string>
+    <string name="block_notifications_description">Tekshiriladigan xabarlar olishni vaqtincha bloklash</string>
+    <string name="block_notifications_text">Meni bezovta qilmang</string>
+    <string name="general_error_description">Xato yuz berdi. Keyinroq takroran urinib koʻring.</string>
+    <string name="network_error_description">Internetga ulanganlingizni tekshiring va takroran urinib koʻring.</string>
+    <string name="notification_event_cancel">Bekor qilish</string>
+    <string name="notification_event_close">Yopish</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Tozalash</string>
+    <string name="notification_history_delete">Olib tashlash</string>
+    <string name="notification_history_shortcut_name">Xabarnomalar</string>
+    <string name="notification_history_text">Xabarnomalar tarixi</string>
+    <string name="notification_history_text_description">Ushbu uskuna uchun xabarnomalar roʻyxatini koʻrsatish</string>
+    <string name="notification_settings">Sozlamalar</string>
+    <string name="report_reuse_text">%1$s menga tegishli emas</string>
+    <string name="report_reuse_text_confirmation">Siz barcha moslamalaringizga %1$s uchun tekshiriladigan xabarlar olishni bloklashni xohlashingizga aminmisiz?</string>
+    <string name="report_reuse_text_description">Mening barcha moslamalarimga tekshiriladigan xabarlar olishni bloklash</string>
+    <string name="setting_saved_toast_text">Sizning sozlamalaringiz saqlandi</string>
+    <string name="title_activity_settings">Xabarlar sozlamalari</string>
+</resources>

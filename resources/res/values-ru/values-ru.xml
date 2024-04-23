@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 день</string>
+    <string name="block_for_one_hour_text">1 час</string>
+    <string name="block_for_one_minute_text">1 минуту</string>
+    <string name="block_for_text">Не беспокоить меня</string>
+    <string name="block_notifications_description">Временно заблокировать получение верификационных уведомлений</string>
+    <string name="block_notifications_text">Не беспокоить меня</string>
+    <string name="general_error_description">Произошла ошибка. Пожалуйста, попробуйте повторить позже.</string>
+    <string name="network_error_description">Проверьте подключение к Интернету и попробуйте еще раз</string>
+    <string name="notification_event_cancel">Отмена</string>
+    <string name="notification_event_close">Закрыть</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Очистить</string>
+    <string name="notification_history_delete">Удалить</string>
+    <string name="notification_history_delete_all_confirm">Вы уверены, что хотите удалить все уведомления?</string>
+    <string name="notification_history_delete_confirm">Вы уверены, что хотите удалить все уведомления от %1$s?</string>
+    <string name="notification_history_delete_sms_confirm">Вы уверены, что хотите удалить уведомление от %1$s?</string>
+    <string name="notification_history_shortcut_name">Уведомления</string>
+    <string name="notification_history_text">История уведомлений</string>
+    <string name="notification_history_text_description">Показать список уведомлений для этого устройства</string>
+    <string name="notification_settings">Настройки</string>
+    <string name="report_reuse_text">%1$s не принадлежит мне</string>
+    <string name="report_reuse_text_confirmation">Вы уверены, что хотите заблокировать получение верификационных уведомлений для %1$s на всех ваших устройствах</string>
+    <string name="report_reuse_text_description">Заблокировать получение верификационных уведомлений на всех моих устройствах</string>
+    <string name="setting_saved_toast_text">Ваши настройки сохранены</string>
+    <string name="title_activity_settings">Настройки уведомлений</string>
+</resources>

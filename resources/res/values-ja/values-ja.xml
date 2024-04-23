@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1日</string>
+    <string name="block_for_one_hour_text">1時間</string>
+    <string name="block_for_one_minute_text">1分</string>
+    <string name="block_for_text">邪魔をしない</string>
+    <string name="block_notifications_description">一時的に確認済みのお知らせを受け取りをブロックする</string>
+    <string name="block_notifications_text">邪魔をしない</string>
+    <string name="general_error_description">エラーが発生したので、後でもう一度やって下さい</string>
+    <string name="network_error_description">インターネットの接続を確認して、後でまたお試し下さい</string>
+    <string name="notification_event_cancel">キャンセル</string>
+    <string name="notification_event_close">閉じる</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">消去</string>
+    <string name="notification_history_delete">削除</string>
+    <string name="notification_history_shortcut_name">通知</string>
+    <string name="notification_history_text">通知履歴</string>
+    <string name="notification_history_text_description">このデバイスにおける通知のリストを表示</string>
+    <string name="notification_settings">設定</string>
+    <string name="report_reuse_text">%1$sは私のものではありません</string>
+    <string name="report_reuse_text_confirmation">%1$sについて確認済みのお知らせを本当に自分のデバイス全てでブロックしますか？</string>
+    <string name="report_reuse_text_description">自分のデバイス全てで確認済みのお知らせを受け取りをブロックする</string>
+    <string name="setting_saved_toast_text">設定は保存されました</string>
+    <string name="title_activity_settings">お知らせの設定</string>
+</resources>

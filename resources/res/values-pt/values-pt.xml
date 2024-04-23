@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 dia</string>
+    <string name="block_for_one_hour_text">1 hora</string>
+    <string name="block_for_one_minute_text">1 minuto</string>
+    <string name="block_for_text">Não me incomode para</string>
+    <string name="block_notifications_description">Bloqueia notificações temporariamente</string>
+    <string name="block_notifications_text">Não me incomode</string>
+    <string name="general_error_description">Houve um erro, tente novamente mais tarde.</string>
+    <string name="network_error_description">Verifique sua conexão com a Internet e tente novamente</string>
+    <string name="notification_event_cancel">Cancelar</string>
+    <string name="notification_event_close">Fechar</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Limpar</string>
+    <string name="notification_history_delete">Eliminar</string>
+    <string name="notification_history_shortcut_name">Notificações</string>
+    <string name="notification_history_text">Histórico de notificações</string>
+    <string name="notification_history_text_description">Mostrar lista de notificações para este dispositivo</string>
+    <string name="notification_settings">Configurações</string>
+    <string name="report_reuse_text">%1$s não me pertence</string>
+    <string name="report_reuse_text_confirmation">Você tem certeza que quer parar de receber notificações de verificação para %1$s por todos os seus dispositivos?</string>
+    <string name="report_reuse_text_description">Bloqueia notificações de verificação por todos os meus dispositivos</string>
+    <string name="setting_saved_toast_text">Suas preferências foram registradas</string>
+    <string name="title_activity_settings">Configuração das notificações</string>
+</resources>

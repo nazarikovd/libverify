@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <string-array name="libverify_block_notification_names">
+        <item>@string/block_for_one_day_text</item>
+        <item>@string/block_for_one_hour_text</item>
+        <item>@string/block_for_one_minute_text</item>
+    </string-array>
+    <string-array name="libverify_block_notification_values" translatable="false">
+        <item>86400</item>
+        <item>3600</item>
+        <item>60</item>
+    </string-array>
+    <bool name="libverify_is_tablet">false</bool>
+    <color name="libverify_secondary_icon_color">#ff757575</color>
+    <color name="libverify_settings_color">#2A56C6</color>
+    <dimen name="libverify_activity_horizontal_margin">16dp</dimen>
+    <dimen name="libverify_activity_sms_dialogs_margin_left">16dp</dimen>
+    <dimen name="libverify_activity_sms_dialogs_margin_right">32dp</dimen>
+    <dimen name="libverify_activity_sms_messages_margin_left">4dp</dimen>
+    <dimen name="libverify_activity_sms_messages_margin_right">52dp</dimen>
+    <dimen name="libverify_activity_vertical_margin">16dp</dimen>
+    <dimen name="libverify_dialog_margin_top">6dp</dimen>
+    <dimen name="libverify_message_bubble_margin_left">4dp</dimen>
+    <dimen name="libverify_message_bubble_margin_top">6dp</dimen>
+    <dimen name="libverify_message_image_margin_top">2dp</dimen>
+    <dimen name="libverify_message_text_margin_left">8dp</dimen>
+    <dimen name="libverify_message_text_margin_top">6dp</dimen>
+    <dimen name="libverify_message_time_margin_left">12dp</dimen>
+    <integer name="libverify_fetcher_job_id">11203</integer>
+    <integer name="libverify_gcm_process_job_id">11206</integer>
+    <integer name="libverify_gcm_register_job_id">11207</integer>
+    <integer name="libverify_network_check_job_id">11208</integer>
+    <integer name="libverify_settings_job_id">11201</integer>
+    <integer name="libverify_sms_call_job_id">11204</integer>
+    <integer name="libverify_sms_retriever_job_id">11205</integer>
+    <integer name="libverify_verification_job_id">11202</integer>
+    <string name="block_for_one_day_text">1 day</string>
+    <string name="block_for_one_hour_text">1 hour</string>
+    <string name="block_for_one_minute_text">1 minute</string>
+    <string name="block_for_text">Do not disturb me for</string>
+    <string name="block_notifications_description">Temporally block notifications</string>
+    <string name="block_notifications_text">Do not disturb me</string>
+    <string name="general_error_description">An error occurred, please try again later.</string>
+    <string name="libverify_application_key" translatable="false"/>
+    <string name="libverify_application_name" translatable="false"/>
+    <string name="libverify_debug_checks" translatable="false"/>
+    <string name="libverify_default_disable_sim_data_send" translatable="false"/>
+    <string name="libverify_high_notification_description" ns1:ignore="MissingTranslation"/>
+    <string name="libverify_high_notification_id" translatable="false">ru.mail.libverify.notifications.high</string>
+    <string name="libverify_high_notification_name" ns1:ignore="MissingTranslation">Verification notifications</string>
+    <string name="libverify_low_notification_description" ns1:ignore="MissingTranslation"/>
+    <string name="libverify_low_notification_id" translatable="false">ru.mail.libverify.notifications.low</string>
+    <string name="libverify_low_notification_name" ns1:ignore="MissingTranslation">Verification notifications (service)</string>
+    <string name="libverify_resource_led_color_id" translatable="false"/>
+    <string name="libverify_server_id" translatable="false"/>
+    <string name="libverify_support_feature_callui" translatable="false"/>
+    <string name="network_error_description">Check your internet connection and try again.</string>
+    <string name="notification_event_cancel">Cancel</string>
+    <string name="notification_event_close">Close</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Clear</string>
+    <string name="notification_history_delete">Delete</string>
+    <string name="notification_history_delete_all_confirm" ns1:ignore="MissingTranslation">Are you sure you want to delete all notifications?</string>
+    <string name="notification_history_delete_confirm" ns1:ignore="MissingTranslation">Are you sure you want to delete notifications from %1$s?</string>
+    <string name="notification_history_delete_sms_confirm" ns1:ignore="MissingTranslation">Are you sure you want to delete notification from %1$s?</string>
+    <string name="notification_history_shortcut_name">Notifications</string>
+    <string name="notification_history_text">Notification history</string>
+    <string name="notification_history_text_description">Show notification history on this device</string>
+    <string name="notification_settings">Settings</string>
+    <string name="report_reuse_text">%1$s doesn\'t belong to me</string>
+    <string name="report_reuse_text_confirmation">Are you sure you want to stop receiving verification notifications for %1$s across all your devices?</string>
+    <string name="report_reuse_text_description">Block verification notifications across all my devices</string>
+    <string name="setting_saved_toast_text">Your preferences have been saved</string>
+    <string name="title_activity_settings">Notification settings</string>
+    <style name="libverify.Theme.Custom.Popup" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowTitleSize">0dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+    <style name="libverify.Theme.Settings" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/libverify_settings_color</item>
+        <item name="colorPrimary">@color/libverify_settings_color</item>
+    </style>
+    <style name="libverify_custom_color_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+    </style>
+    <style name="libverify_font_body1" parent="@style/TextAppearance.AppCompat.Body1"/>
+    <style name="libverify_font_caption" parent="@style/TextAppearance.AppCompat.Caption"/>
+    <style name="libverify_font_subhead" parent="@style/TextAppearance.AppCompat.Subhead"/>
+</resources>

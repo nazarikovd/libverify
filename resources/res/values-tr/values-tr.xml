@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 gün</string>
+    <string name="block_for_one_hour_text">1 saat</string>
+    <string name="block_for_one_minute_text">1 dakika</string>
+    <string name="block_for_text">Rahatsız etme</string>
+    <string name="block_notifications_description">Doğrulama bildirilerinin gelmesini geçeci olarak bloke et</string>
+    <string name="block_notifications_text">Rahatsız etme</string>
+    <string name="general_error_description">Bir hata oluştu sonra tekrar deneyiniz.</string>
+    <string name="network_error_description">İnternete bağlantısını control edip tekrar deneyin</string>
+    <string name="notification_event_cancel">İptal</string>
+    <string name="notification_event_close">Kapat</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Temizle</string>
+    <string name="notification_history_delete">Sil</string>
+    <string name="notification_history_shortcut_name">Bildirimler</string>
+    <string name="notification_history_text">Bildirim geçmişi</string>
+    <string name="notification_history_text_description">Bu cihaz için bildirim listesini göster</string>
+    <string name="notification_settings">Ayarlar</string>
+    <string name="report_reuse_text">%1$s bana ait değil</string>
+    <string name="report_reuse_text_confirmation">Tüm aygıtlarımda %1$s ile ilgili doğrulama bildirilerini bloke etmek istediğinizden emin misiniz?</string>
+    <string name="report_reuse_text_description">Tüm aygıtlarımda doğrulama bildirilerini bloke et</string>
+    <string name="setting_saved_toast_text">Ayarlarınız kaydedilmiştir</string>
+    <string name="title_activity_settings">Bildirme ayarları</string>
+</resources>

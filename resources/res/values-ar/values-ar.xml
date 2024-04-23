@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">يوم واحد</string>
+    <string name="block_for_one_hour_text">ساعة واحدة</string>
+    <string name="block_for_one_minute_text">دقيقة واحد </string>
+    <string name="block_for_text">لا تزعجني لمدة</string>
+    <string name="block_notifications_description">حظر الإخطارات مؤقتًا</string>
+    <string name="block_notifications_text">لا تزعجني</string>
+    <string name="general_error_description">حدث خطأ. يرجى إعادة محاولة مرة أخرى لاحقا.</string>
+    <string name="network_error_description">الرجاء التحقق من الاتصال بالانترنت وإعادة المحاولة من جديد</string>
+    <string name="notification_event_cancel">إلغاء</string>
+    <string name="notification_event_close">إغلاق</string>
+    <string name="notification_event_confirm">موافق</string>
+    <string name="notification_history_clear">مسح</string>
+    <string name="notification_history_delete">حذف</string>
+    <string name="notification_history_shortcut_name">الإخطارات</string>
+    <string name="notification_history_text">سجل الإخطارات</string>
+    <string name="notification_history_text_description">إظهار قائمة الإخطارات لهذا الجهاز.</string>
+    <string name="notification_settings">الإعدادات</string>
+    <string name="report_reuse_text">%1$s لا ينتمي إليّ</string>
+    <string name="report_reuse_text_confirmation">هل أنت متأكد أنك تريد إيقاف تلقي إخطارات التحقق لـ %1$s عبر جميع الأجهزة الخاصة بك؟</string>
+    <string name="report_reuse_text_description">حظر إخطارات التحقق عبر جميع الأجهزة الخاصة بي</string>
+    <string name="setting_saved_toast_text">تم حفظ تفضيلاتك</string>
+    <string name="title_activity_settings">إعدادات الإخطارات</string>
+</resources>

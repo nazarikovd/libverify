@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 den</string>
+    <string name="block_for_one_hour_text">1 hodina</string>
+    <string name="block_for_one_minute_text">1 minutu</string>
+    <string name="block_for_text">Neruší mě</string>
+    <string name="block_notifications_description">Dočasně zablokovat přijímání ověřovacích oznámení</string>
+    <string name="block_notifications_text">Neruší mě</string>
+    <string name="general_error_description">Došlo k chybě, zkus to prosím znovu později.</string>
+    <string name="network_error_description">Zkontrolujte připojení k internetu a zkuste ještě jednou</string>
+    <string name="notification_event_cancel">Zrušení</string>
+    <string name="notification_event_close">Zavřít</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Smazat</string>
+    <string name="notification_history_delete">Smazat</string>
+    <string name="notification_history_shortcut_name">Oznámení</string>
+    <string name="notification_history_text">Historie oznámení</string>
+    <string name="notification_history_text_description">Zobrazit seznam oznámení pro toto zařízení</string>
+    <string name="notification_settings">Nastavení</string>
+    <string name="report_reuse_text">%1$s není určeno mně</string>
+    <string name="report_reuse_text_confirmation">Opravdu chcete přestat dostávat oznámení o ověření pro %1$s na všechna svá zařízení?</string>
+    <string name="report_reuse_text_description">Zablokovat přijímání ověřovacích oznámení na všech mých zařízeních</string>
+    <string name="setting_saved_toast_text">Vaše nastavení bylo uloženo</string>
+    <string name="title_activity_settings">Nastavení oznámení</string>
+</resources>

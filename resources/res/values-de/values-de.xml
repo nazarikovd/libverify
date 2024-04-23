@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="block_for_one_day_text">1 Tag</string>
+    <string name="block_for_one_hour_text">1 Stunde</string>
+    <string name="block_for_one_minute_text">1 Minute</string>
+    <string name="block_for_text"> Bitte nicht stören</string>
+    <string name="block_notifications_description"> Verifizierungsanforderungen temporär blockieren</string>
+    <string name="block_notifications_text">Bitte nicht stören</string>
+    <string name="general_error_description">Ein Fehler ist aufgetreten. Bitte versuche es später erneut.</string>
+    <string name="network_error_description">Überprüfe deine Internetverbindung und versuche es erneut.</string>
+    <string name="notification_event_cancel">Abbrechen</string>
+    <string name="notification_event_close">Schließen</string>
+    <string name="notification_event_confirm">OK</string>
+    <string name="notification_history_clear">Löschen</string>
+    <string name="notification_history_delete">Löschen</string>
+    <string name="notification_history_shortcut_name">Benachrichtigungen</string>
+    <string name="notification_history_text">Benachrichtigungsverlauf</string>
+    <string name="notification_history_text_description">Benachrichtigungsliste für dieses Gerät anzeigen</string>
+    <string name="notification_settings">Einstellungen</string>
+    <string name="report_reuse_text">%1$s gehört nicht mir</string>
+    <string name="report_reuse_text_confirmation">Sind Sie sicher, dass Sie Verifizierungsanforderungen für %1$s auf allen Ihren Geräten blockieren möchten?</string>
+    <string name="report_reuse_text_description">Verifizierungsanforderungen auf allen meinen Geräten blockieren</string>
+    <string name="setting_saved_toast_text">Ihre Einstellungen wurden gespeichert</string>
+    <string name="title_activity_settings">Benachrichtigungseinstellungen</string>
+</resources>
